@@ -1,8 +1,8 @@
 import 'dart:io';
 bool isEven(int num1)
 {
-  int i=1;
-  if(i%2==0)
+  
+  if(num1%2==0)
   {
     return true;
   }
@@ -18,5 +18,5 @@ void main()
   int? num1=int.parse(stdin.readLineSync()!);
 
   bool eve=isEven(num1);
-  print("Even");
+  print(eve);
 }

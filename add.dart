@@ -1,17 +1,17 @@
-import 'dart:io';
-void   add(int num1,int num2,Function callback)
+
+void   add(int num1,int num2, callback)
 {
-  int result=num1+num2;
-  callback(result);
+  int sum=num1+num2;
+  callback(sum);
 
 }
 void main()
 {
-  stdout.write("Enter a number`:");
-  int num1=int.parse(stdin.readLineSync()!);
-  stdout.write("Enter a number2:");
-  int num2=int.parse(stdin.readLineSync()!);
-  
+
+  void result(int addition ){
+    print("result is:$addition");
+  }
+  add(30,25,result);
   
   
 }
